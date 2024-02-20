@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+
+
     <bean class="com.example.demo.Student" name = "Student1">
         <!-- collaborators and configuration for this bean go here -->
    <property name="studentId"> <value>1234</value> </property>
