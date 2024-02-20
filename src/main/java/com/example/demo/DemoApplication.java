@@ -16,8 +16,8 @@ public class DemoApplication {
 		System.out.println(student1);
 		Student student2 = (Student)context.getBean("Student2");
 		System.out.println(student2);
-
 		Student student3 = (Student)context.getBean("Student3");
+		System.out.println("changes");
 		System.out.println(student3);
 	}
 
