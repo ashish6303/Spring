@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean  class="com.example.demo.ConsInjection.Certificate" name = "cer1" >
+        <constructor-arg value="Spring Certified" />
+    </bean>
+        <!-- collaborators and configuration for this bean go here -->
+    <bean class="com.example.demo.ConsInjection.Person" name="person1">
+        <constructor-arg value="Ashish" />
+        <constructor-arg value="3090" type="int" />
+        <constructor-arg ref="cer1" />
+    </bean>
+
+    <bean class="com.example.demo.ConsInjection.Addition" name = "Sum">
+        <constructor-arg value="12" type = "int" />
+        <constructor-arg value="20" type = "int" />
+    </bean>
+
+    <!-- more bean definitions go here -->
+</beans>

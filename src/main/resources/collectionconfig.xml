@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+        <!-- collaborators and configuration for this bean go here -->
+
+<bean class="com.example.demo.collections.Employees" name="Employee1" >
+    <property name="name" value="Ram" />
+
+    <property name="phones" >
+        <list>
+            <value>7719431351</value>
+            <value>8988749740</value>
+            <value>9080706050</value>
+        </list>
+    </property>
+
+    <property name="addresses">
+        <set>
+            <value>Banglore</value>
+            <value>Chennai </value>
+            <value>Thailand</value>
+        </set>
+    </property>
+    <property name="courses">
+        <map>
+            <entry key="Java" value="2 Months"/>
+            <entry key="C++" value="1.2 Months"/>
+            <entry key="Python" value="4 Months"/>
+        </map>
+    </property>
+
+</bean>
+
+
+    <!-- more bean definitions go here -->
+</beans>
